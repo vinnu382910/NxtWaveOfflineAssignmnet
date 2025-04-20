@@ -1,0 +1,39 @@
+/* index.css */
+
+/* Styling for Task Item */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    border: 2px solid #000;
+  }
+  
+  .task-item.completed {
+    background-color: #d1f7d1; /* light green for completed tasks */
+  }
+  
+  .task-text {
+    flex: 1;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .task-text.completed-text {
+    text-decoration: line-through;
+    color: #a1a1a1; /* grey color for completed task text */
+  }
+  
+  .delete-btn {
+    margin-left: 16px;
+    color: #f56565; /* Red color for the delete button */
+    transition: color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    color: #c53030; /* Darker red on hover */
+  }
+  
